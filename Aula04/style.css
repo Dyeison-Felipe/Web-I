@@ -1,0 +1,88 @@
+body{
+    background-color:#ccc;
+    margin: 0 300px 0 300px;
+    font-family: Arial;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+
+header{
+    margin: 0 20px 0 20px;
+
+}
+
+main{
+    margin: 0 20px 0 20px;
+}
+
+header h1{
+    text-align: center;
+    border: 2px solid brown;
+    background-color: rgba(0,0,0,0.3);
+    text-transform: uppercase;
+
+
+}
+
+h2{
+    border: 2px solid brown;
+    margin-right: 700px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+header nav ul{
+    margin: 20px 80px 0 0;
+    text-align: right; /*muda para a direita o menu*/
+}
+
+header nav li{
+    display: inline-block;  /*ajusta o tamanho da caixa ao redor do texto*/
+    border: 1px solid brown;/*aplica uma borda de 1pixel do tipo solido na cor branca*/
+    margin-left: 16px;/* para afastar as caixas uma das outras*/
+}
+
+header nav a{
+    background-color: rgb(0, 0, 0, 0.3);
+    color: black;
+    padding: 10px;
+    display: block; /* pelo fato da tag a aer uma elemnto de linha deve se colocar tag a */
+    text-decoration: none; /* para tirar o sublinhado do link*/
+    text-transform: uppercase;
+    font-weight: bold; 
+
+}
+
+section img{
+    height: 110px;
+}
+
+.flaxbox{
+    height: 100px;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.flaxbox .div2{
+    width: 400px;
+    margin:2px;
+}
+
+.flex-container1{
+    flex-flow: row wrap;
+}
+
+footer{
+    border: 2px solid brown;
+    background-color: rgba(0,0,0,0.3);
+    margin: 0 20px 10px 20px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
