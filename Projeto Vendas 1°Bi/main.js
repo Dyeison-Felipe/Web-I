@@ -1,7 +1,7 @@
 // botões
 
 function finalizar() {
-    window.location = "login.html";
+    window.location = "computadores.html";
 }
 
 function login() {
@@ -14,6 +14,11 @@ function cadastro() {
 
 function voltar() {
     window.location = "index.html";
+}
+
+function plano() {
+    window.location = "index.html#acessar-plano";
+    
 }
 
 
@@ -31,6 +36,11 @@ const usuarios = [
     {
         login: 'renannvolff@gmail.com',
         pass: 'renann123'
+    },
+    {
+        login: 'Giovane_DSWM@gmail.com',
+        pass: 'giovani123'
+
     }
 ]
 

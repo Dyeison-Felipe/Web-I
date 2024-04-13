@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="inicial inicio-index">
+        <div>
+            <img src="assets/imagens/logo.png" alt="">
+        </div>
+
+        <div class="botoes botoes-inicio">
+            <button>Início</button>
+            <button onclick="plano()">Planos</button>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="botao-inicial">
+            <button class="btn-login" id="logar" onclick="login()">Login</button>
+
+            <button class="btn-cad" id="cadastrar" onclick="cadastro()">Nova conta</button>
+        </div>
+    </header>
+
+    <section id="home" class="d-flex fundo">
+
+        <div class="container align-self-center">
+            <!--Grid-->
+            <div class="row">
+
+                <div class="col-md-12 capa"> <!-- col-ms-12 para ocupar todo o espaço: 12 colunas-->
+
+                    <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <!-- primeira coisa que aparece no carrosel quando carrega a página-->
+                            <div class="carousel-item active ">
+                                <h1>Volkwagem Fox</h1>
+                                    <img src="assets/imagens/fox.jpg" height="550" width="550"  alt="">
+                                    <img src="assets/imagens/interna-fox.jpg" height="550" width="550"  alt="">
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <h1>Chevrolet Vectra</h1>
+                                <img src="assets/imagens/vectra.jpg"  alt="" width="550" height="550">
+                                <img src="assets/imagens/vectra.jpg"  alt="" width="550" height="550">
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <h1>Renault Clio</h1>
+                                <img src="assets/imagens/clio.jpg"  alt="" width="550" height="550">
+                                <img src="assets/imagens/Imagem do WhatsApp de 2024-04-01 à(s) 21.57.31_f3e7c54d.jpg"  alt="" width="550" height="550">
+                            </div>
+
+                            <div class="carousel-item">
+                                <h1>Mause Gamer</h1>
+                                <img src="assets/imagens/Mause Logitech.webp"  alt="" width="550" height="550">
+                                <img src="assets/imagens/Mouse-Gamer-Logitech-cima.webp"  alt="" width="550" height="550">
+
+                            </div>
+                        </div> <!--fechamento do inner-->
+
+
+                        <!--Controles laterais-->
+
+                        <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-left fa-3x text-dark posicao"></i>
+                        </a>
+
+                        <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-right fa-3x text-dark posicao-next"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    
+</body>
+</html>
