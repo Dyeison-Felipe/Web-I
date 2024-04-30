@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        form div input{
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        form button {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        form button:hover{
+            background-color:rgb(9, 9, 105) ;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formOp">
+        
+        <p>Escolha uma das opções a seguir</p>
+        <p>OPÇÃO 1</p>
+        <p>OPÇÃO 2</p>
+        <p>OPÇÃO 3</p>
+
+        <div>
+            
+            <input type="text" name="Opcao" id="opcao" placeholder="Opção">
+            <button onclick="exibir()" type="submit" >Escolher</button>
+        </div>
+
+        <p id="resultado"></p>
+
+
+    </form>
+
+
+
+    
+</body>
+
+<script src="index.js"></script>
+</html>

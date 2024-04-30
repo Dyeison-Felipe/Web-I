@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Nota</title>
+    <style>
+        #formNota{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        form div input{
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        form button {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        form button:hover{
+            background-color:rgb(9, 9, 105) ;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formNota">
+        
+        <p>Digite a nota do aluno</p>
+
+        <div>
+            <label for="text">Nota: </label>
+            <input type="text" name="Nota" id="nota">
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        <p id="resultado"></p>
+
+    </form>
+    
+</body>
+
+<script src="index.js"></script>
+</html>

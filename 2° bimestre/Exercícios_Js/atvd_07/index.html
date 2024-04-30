@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorialr</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        form div input{
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        form button {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        form button:hover{
+            background-color:rgb(9, 9, 105) ;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formFatorial">
+        
+        <p>Digite um Número para calcular seu fatorial </p>
+
+        <div>
+            <label for="text">Número:</label>
+            <input type="text" name="numero" id="numero">
+            <button type="submit" >ver</button>
+        </div>
+
+        <p id="resultado"></p>
+        <p id="Fatorial"></p>
+
+
+    </form>
+
+
+
+    
+</body>
+
+<script src="index.js"></script>
+</html>

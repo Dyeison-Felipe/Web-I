@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letras</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        form div input{
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        form button {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        form button:hover{
+            background-color:rgb(9, 9, 105) ;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formLetra">
+        
+        <p>Digite duas letras </p>
+
+        <div>
+            <label for="text">Letra:</label>
+            <input type="text" name="Letra" id="letra">
+            <button onclick="exibir()" type="submit" >Adicionar</button>
+        </div>
+
+        <p id="resultado"></p>
+        <p id="Letra"></p>
+
+
+    </form>
+
+
+
+    
+</body>
+
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+
+    <style>
+        body{
+            background-color: #FFFFFF;
+        }
+        p{
+            color: #000000;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* gap: 10px; */
+        }
+        
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        form div input{
+            height: 25px;
+            border-radius: 10px;
+            color: #000000;
+            padding-left: 10px;
+        }
+
+        form button {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+        }
+
+        form button:hover{
+            background-color:rgb(9, 9, 105) ;
+        }
+
+        .buttonResult {
+            width: 100px;
+            height:50px;
+            background-color: blue;
+            border: 1px solid black;
+            color: white;
+            margin-left: 705px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="formMatriz1">
+        <p>Digite os numero que vao preencher a matriz </p>
+        <p>VETOR 1 Digite um por vez</p>
+        <p>a11, a12, a13</p>
+
+        <div>
+            <label for="text">Número:</label>
+            <input type="text" name="numMatriz" id="numMatriz1">
+            <button onclick="exibir()" type="submit" >Adicionar</button>
+        </div>
+
+        <p id="Linha1"></p>
+
+    </form>
+
+    <form id="formMatriz2">
+        <p>VETOR 2 Digite um por vez</p>
+        <p>a21, a22, a23</p>
+
+
+        <div>
+            <label for="text">Número:</label>
+            <input type="text" name="numMatriz" id="numMatriz2">
+            <button onclick="exibir()" type="submit" >Adicionar</button>
+        </div>
+
+        <p id="Linha2"></p>
+
+        
+
+
+    </form>
+
+    <form id="formMatriz3">
+        <p>VETOR 3 Digite um por vez</p>
+        <p>a31, a32, a33</p>
+
+        <div>
+            <label for="text">Número:</label>
+            <input type="text" name="numMatriz" id="numMatriz3">
+            <button onclick="exibir()" type="submit" >Adicionar</button>
+        </div>
+
+        <p id="Linha3"></p>
+        <h2>Sua matriz é:</h2>
+        <p id="l1"></p>
+        <p id="l2"></p>
+        <p id="l3"></p>
+
+        <p id="resultado"></p>
+
+    </form>
+
+    <button onclick="Resultado()" class="buttonResult">Resultado</button>
+
+
+
+    
+</body>
+
+<script src="index.js"></script>
+</html>
