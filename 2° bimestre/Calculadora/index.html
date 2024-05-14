@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+    <title>Calculadora</title>
+
+    <style>
+      .calculadora {
+        margin-top: 40px;
+        border: 1px solid black;
+        padding: 20px;
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        box-shadow: 1px 1px #000;
+      }
+
+      .btn{
+        width: 60px;
+        height: 50px;
+        margin: 5px;
+        box-shadow: 1px 1px #000;
+      }
+
+      .clear, .zero{
+        width: 130px;
+      }
+
+      .enter{
+        height: 110px;
+      }
+ 
+      .resultado{
+        text-align: right;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom:20px;
+        border: 1px solid #000;
+        box-shadow: 1px 1px #000;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div class="calculadora">
+
+            <input type="text" id="resultado" class="form-control resultado" placeholder="0" disabled="disabled"/>
+
+            <div class="row">
+              <button onclick="calcular('simbolo', 'c')" type="button" class="btn btn-dark btn-lg font-weigth-light clear">C</button>
+
+              <button onclick="calcular('simbolo', '/')" type="button" class="btn btn-dark btn-lg font-weigth-light">/</button>
+
+              <button onclick="calcular('simbolo', '*')" type="button" class="btn btn-dark btn-lg font-weigth-light">X</button>
+
+            </div>
+  
+            <div class="row">
+              <button onclick="calcular('numero', '7')" type="button" class="btn btn-dark btn-lg font-weigth-light">7</button>
+  
+              <button onclick="calcular('numero', '8')" type="button" class="btn btn-dark btn-lg font-weigth-light">8</button>
+  
+              <button onclick="calcular('numero', '9')" type="button" class="btn btn-dark btn-lg font-weigth-light">9</button>
+
+              <button onclick="calcular('simbolo', '-')" type="button" class="btn btn-dark btn-lg font-weigth-light">-</button>
+  
+            </div>
+
+            <div class="row">
+              <button onclick="calcular('numero', '4')" type="button" class="btn btn-dark btn-lg font-weigth-light">4</button>
+
+              <button onclick="calcular('numero', '5')" type="button" class="btn btn-dark btn-lg font-weigth-light">5</button>
+
+              <button onclick="calcular('numero', '6')" type="button" class="btn btn-dark btn-lg font-weigth-light">6</button>
+
+              <button onclick="calcular('simbolo', '+')" type="button" class="btn btn-dark btn-lg font-weigth-light">+</button>
+
+            </div>
+
+            <div class="row">
+              <button onclick="calcular('numero', '1')" type="button" class="btn btn-dark btn-lg font-weigth-light">1</button>
+
+              <button onclick="calcular('numero', '2')" type="button" class="btn btn-dark btn-lg font-weigth-light">2</button>
+
+              <button onclick="calcular('numero', '3')" type="button" class="btn btn-dark btn-lg font-weigth-light">3</button>
+
+              <button onclick="calcular('simbolo', '=')" type="button" class="btn btn-dark btn-lg font-weigth-light enter">=</button>
+
+            </div>
+
+            <div class="row" style="margin-top: -60px;">
+              <button onclick="" type="button" class="btn btn-dark btn-lg font-weigth-light zero">0</button>
+
+              <button onclick="calcular('simbolo', '.')" type="button" class="btn btn-dark btn-lg font-weigth-light">.</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
