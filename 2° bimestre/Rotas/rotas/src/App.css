@@ -1,0 +1,47 @@
+header{
+  border:0.1em solid #000;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.link{
+  text-decoration: none;
+  color: #000;
+  border: 0.1em solid #000;
+  padding: 0.5em;
+  background-color:gold;
+  border-radius: 0.6em;
+}
+
+.link:hover{
+  background-color: rgb(188, 160, 1);
+  transition: 0.5s;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  background-color: khaki;
+  height: 86vh;
+}
+
+.container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+

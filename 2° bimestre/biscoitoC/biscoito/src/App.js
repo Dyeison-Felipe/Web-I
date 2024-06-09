@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import {Component} from 'react'
 import './estilo.css'
 
 import biscoito from './assets/biscoito.png'
@@ -29,4 +29,26 @@ class App extends Component {
     this.setState(state)
   }
 
+  render(){
+    return(
+      <div className='container'>
+        <img src={biscoito}  className='img' alt='imagem do biscoito'/>
+        <Botao acao={this.quebrarBiscoito} nome="Abrir Biscoito"/>
+        <h3 className='textoFrase'>{this.state.textoFrase}</h3>
+      </div>
+    );
+  }
 }
+
+export default App
+
+class Botao extends Component{
+  render(){
+    return(
+      <div>
+        <button onClick={this.props.acao}>{this.props.nome}</button>
+      </div>
+    )
+  }
+}
+
